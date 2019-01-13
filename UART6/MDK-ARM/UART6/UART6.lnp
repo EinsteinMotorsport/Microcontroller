@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"uart6\startup_stm32f429xx.o"
+"uart6\stm32f4xx_hal_can.o"
+"uart6\stm32f4xx_hal_rtc.o"
+"uart6\stm32f4xx_hal_rtc_ex.o"
+"uart6\stm32f4xx_hal_tim.o"
+"uart6\stm32f4xx_hal_tim_ex.o"
+"uart6\stm32f4xx_hal_uart.o"
+"uart6\stm32f4xx_hal_rcc.o"
+"uart6\stm32f4xx_hal_rcc_ex.o"
+"uart6\stm32f4xx_hal_flash.o"
+"uart6\stm32f4xx_hal_flash_ex.o"
+"uart6\stm32f4xx_hal_flash_ramfunc.o"
+"uart6\stm32f4xx_hal_gpio.o"
+"uart6\stm32f4xx_hal_dma_ex.o"
+"uart6\stm32f4xx_hal_dma.o"
+"uart6\stm32f4xx_hal_pwr.o"
+"uart6\stm32f4xx_hal_pwr_ex.o"
+"uart6\stm32f4xx_hal_cortex.o"
+"uart6\stm32f4xx_hal.o"
+"uart6\main.o"
+"uart6\stm32f4xx_it.o"
+"uart6\stm32f4xx_hal_msp.o"
+"uart6\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "UART6\UART6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART6.map" -o UART6\UART6.axf
